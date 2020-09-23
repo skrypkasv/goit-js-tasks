@@ -18,26 +18,6 @@
 //                      он есть, удаляет его
 //                      из текущих
 
-class Storage {
-  constructor(array) {
-    this.items = array;
-  }
-
-  getItems() {
-    return this.items;
-  }
-
-  addItem(item) {
-    this.items.push(item);
-  }
-
-  removeItem(item) {
-    if (this.items.includes(item)) {
-      this.items.splice(this.items.indexOf(item), 1);
-    }
-  }
-}
-
 console.log(typeof Storage);
 // 'function'
 
@@ -71,3 +51,29 @@ console.log(storage.getItems());
   'Антигравитатор',
   'Дроид'
 ] */
+
+//
+//
+//
+//
+//
+//
+// class Storage {
+//   constructor(array) {
+//     this.items = array;
+//   }
+
+//   getItems() {
+//     return this.items;
+//   }
+
+//   addItem(item) {
+//     this.items.push(item);
+//   }
+
+//   removeItem(item) {
+//     if (this.items.includes(item)) {
+//       this.items.splice(this.items.indexOf(item), 1);
+//     }
+//   }
+// }
