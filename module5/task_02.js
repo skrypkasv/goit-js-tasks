@@ -13,17 +13,6 @@
 // User ${ имя } is ${ возраст } years old
 // and has ${ кол - во фоловеров } followers
 
-class User {
-  constructor(name, age, followers) {
-    this.name = name;
-    this.age = age;
-    this.followers = followers;
-  }
-  getInfo() {
-    return `User ${this.name} is ${this.age} years old and has ${this.followers} followers`;
-  }
-}
-
 console.log(typeof User);
 // 'function'
 
@@ -37,3 +26,14 @@ console.log(typeof mango.getInfo);
 const poly = new User("Poly", 3, 17);
 console.log(poly.getInfo());
 // 'User Poly is 3 years old and has 17 followers'
+
+// class User {
+//   constructor(name, age, followers) {
+//     this.name = name;
+//     this.age = age;
+//     this.followers = followers;
+//   }
+//   getInfo() {
+//     return `User ${this.name} is ${this.age} years old and has ${this.followers} followers`;
+//   }
+// }
