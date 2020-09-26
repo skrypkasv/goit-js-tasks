@@ -24,9 +24,11 @@
 // исходный массив. Т.е.нельзя использовать
 // for, splice, push и т.п.мутирующие методы.
 
-// Write code under this line
 const getSortedUniqueSkills = (array) =>
-  array.reduce((acc, { skills }) => [...acc, ...skills], []);
+  array
+    .reduce((acc, { skills }) => [...acc, ...skills], [])
+    .filter((item, indx, arr) => arr.indexOf(item) === indx)
+    .sort();
 
 const users = [
   {
@@ -126,3 +128,15 @@ console.log(getSortedUniqueSkills(users));
  'nulla', 'proident',
  'tempor', 'velit',
  'veniam' ]; */
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//  const getSortedUniqueSkills = (array) =>
+//   array.reduce((acc, { skills }) => [...acc, ...skills], []);
