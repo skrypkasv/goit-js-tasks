@@ -32,8 +32,6 @@ function getNum ({num}) { return num; }
 console.log(getNum(object)) // 2
 */
 
-const getUserNames = (array) => array.map(({ name }) => name);
-
 const users = [
   {
     id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
@@ -131,3 +129,14 @@ console.log(getUserNames(users));
   "Blackburn Dotson",
   "Sheree Anthony",
 ] */
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// const getUserNames = (array) => array.map(({ name }) => name);

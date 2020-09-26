@@ -32,9 +32,6 @@
 // function getNum ({num}) { return num; }
 // console.log(getNum(object)) // 2
 
-const getUsersWithEyeColor = (array, color) =>
-  array.filter(({ eyeColor }) => eyeColor === color);
-
 const users = [
   {
     id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
@@ -123,3 +120,15 @@ const users = [
 ];
 
 console.log(getUsersWithEyeColor(users, "blue"));
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// const getUsersWithEyeColor = (array, color) =>
+//   array.filter(({ eyeColor }) => eyeColor === color);
