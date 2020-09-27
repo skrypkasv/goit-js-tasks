@@ -24,12 +24,6 @@
 // исходный массив. Т.е.нельзя использовать
 // for, splice, push и т.п.мутирующие методы.
 
-const getSortedUniqueSkills = (array) =>
-  array
-    .reduce((acc, { skills }) => [...acc, ...skills], [])
-    .filter((item, indx, arr) => arr.indexOf(item) === indx)
-    .sort();
-
 const users = [
   {
     id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
@@ -137,6 +131,29 @@ console.log(getSortedUniqueSkills(users));
 //
 //
 //
+// const getSortedUniqueSkills = (array) => [
+//   ...new Set(array.reduce((acc, { skills }) => [...acc, ...skills], []).sort()),
+// ];
 //
-//  const getSortedUniqueSkills = (array) =>
-//   array.reduce((acc, { skills }) => [...acc, ...skills], []);
+//
+//
+//
+//
+// const getSortedUniqueSkills = (array) =>
+//   array
+//     .reduce((acc, { skills }) => [...acc, ...skills], [])
+//     .filter((item, indx, arr) => arr.indexOf(item) === indx)
+//     .sort();
+//
+//
+//
+//
+//
+// const getSortedUniqueSkills = (array) =>
+//   array
+//     .reduce((acc, { skills }) => [...acc, ...skills], [])
+//     .reduce(
+//       (unique, item) => (unique.includes(item) ? unique : [...unique, item]),
+//       []
+//     )
+//     .sort();
